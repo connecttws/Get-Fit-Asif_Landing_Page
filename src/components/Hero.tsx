@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { ShieldCheck, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { HERO_DATA } from '../data/coachingData';
 import { VslPlayer } from './VslPlayer';
 
@@ -14,15 +14,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
     <section className="relative overflow-hidden bg-gradient-to-b from-[#EBF8F2] via-[#F4FAF7] to-white pt-8 pb-14 sm:pt-12 sm:pb-20 border-b border-emerald-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         {/* Brand / Coach Name */}
-        <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight uppercase mb-3">
+        <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight uppercase mb-2">
           {HERO_DATA.brandTitle}
         </h1>
 
-        {/* Coach Credential Badge */}
-        <div className="inline-flex items-center gap-2 bg-white/95 border border-emerald-300 shadow-xs px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold text-emerald-900 mb-4">
-          <ShieldCheck className="w-4 h-4 text-[#00BD68]" />
-          <span>{HERO_DATA.certification}</span>
-        </div>
+        {/* Coach Certification - Clean text line */}
+        <p className="text-sm sm:text-base font-bold text-slate-700 tracking-wide uppercase mb-3">
+          {HERO_DATA.certification}
+        </p>
 
         {/* Subtagline */}
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#00BD68] tracking-tight mb-8">

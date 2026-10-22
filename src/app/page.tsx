@@ -10,7 +10,6 @@ import { JourneyTimeline } from '../components/JourneyTimeline';
 import { ExpectedResults } from '../components/ExpectedResults';
 import { CoachProfile } from '../components/CoachProfile';
 import { Footer } from '../components/Footer';
-import { StickyBottomBar } from '../components/StickyBottomBar';
 import { EnrollmentModal } from '../components/EnrollmentModal';
 import { FloatingWhatsApp } from '../components/FloatingWhatsApp';
 
@@ -24,12 +23,12 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900 pb-28 sm:pb-24">
+    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900 flex flex-col">
       {/* Top Navigation Bar */}
       <Navbar onOpenConsultation={() => handleOpenConsultation('fat_loss')} />
 
       {/* Main Content Sections - Exactly as Requested */}
-      <main>
+      <main className="flex-1">
         {/* 1. Hero with VSL Video and CTA Button */}
         <Hero onOpenConsultation={() => handleOpenConsultation('fat_loss')} />
 
@@ -54,9 +53,6 @@ export default function Home() {
 
       {/* Clean Footer */}
       <Footer />
-
-      {/* Fixed Sticky Bottom Conversion Bar */}
-      <StickyBottomBar onOpenConsultation={() => handleOpenConsultation('fat_loss')} />
 
       {/* Floating WhatsApp Quick Connect */}
       <FloatingWhatsApp />
