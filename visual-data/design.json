@@ -1,0 +1,40 @@
+{
+  "colors": {
+    "primary": {
+      "main": "#00BD68",
+      "hover": "#00A85D",
+      "light": "#EBF8F2",
+      "mintBg": "#EDFAF4",
+      "cardBg": "#F8FCFA",
+      "border": "#A7F3D0",
+      "darkGreen": "#00924E"
+    },
+    "neutral": {
+      "darkNavy": "#0A101D",
+      "slate900": "#0F172A",
+      "slate800": "#1E293B",
+      "slate700": "#334155",
+      "slate600": "#475569",
+      "slate500": "#64748B",
+      "slate400": "#94A3B8",
+      "slate200": "#E2E8F0",
+      "slate100": "#F1F5F9",
+      "white": "#FFFFFF"
+    },
+    "accent": {
+      "whatsapp": "#25D366",
+      "redLive": "#EF4444",
+      "amber": "#F59E0B"
+    }
+  },
+  "fonts": {
+    "body": "Plus Jakarta Sans, Inter, sans-serif",
+    "heading": "Plus Jakarta Sans, sans-serif"
+  },
+  "components": {
+    "buttonPrimary": "bg-gradient-to-r from-[#00BD68] to-[#009e56] hover:from-[#00c874] hover:to-[#00a85d] text-white font-bold rounded-2xl shadow-lg shadow-emerald-600/25",
+    "cardLight": "bg-white rounded-2xl border border-emerald-100 shadow-2xs hover:shadow-md transition-shadow",
+    "cardMint": "bg-[#EDFAF4] rounded-3xl border border-emerald-200 shadow-md",
+    "cardDark": "bg-[#0A101D] text-white rounded-2xl border border-slate-800"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "brand": {
+    "title": "GET FIT WITH ASIF",
+    "coach": "Asif Ali Raza",
+    "certification": "ISSA & INFS Certified Coach",
+    "whatsappPhone": "919876543210"
+  },
+  "hero": {
+    "brandTitle": "GET FIT WITH ASIF",
+    "certification": "ISSA & INFS Certified Coach",
+    "tagline": "Lose Fat | Build Muscle | Become Your Best Self.",
+    "ctaText": "Start Your Transformation Now"
+  },
+  "transformations": {
+    "heading": "Real People, Real Results - Success Stories That Motivate",
+    "ctaText": "Start Your 90-Day Transformation",
+    "stories": [
+      {
+        "id": "trans-1",
+        "name": "Vikram Singhania",
+        "profession": "Software Engineer",
+        "age": 32,
+        "duration": "90 Days",
+        "weightLoss": "-15.4 kg",
+        "tag": "Desk Job",
+        "quote": "With 12-hour desk shifts, I thought fat loss was impossible. Asif built my meal plan around ghar ka khana and 40-min home workouts. Lost 15kg without giving up evening chai!",
+        "beforeStats": "92 kg",
+        "afterStats": "76.6 kg",
+        "beforeImg": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
+        "afterImg": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "trans-2",
+        "name": "Pooja Hegde",
+        "profession": "Corporate HR Manager",
+        "age": 29,
+        "duration": "90 Days",
+        "weightLoss": "-12.8 kg",
+        "tag": "PCOS & Fat Loss",
+        "quote": "Coach Asif altered my carb timing and resistance training. My cycles became regular, my energy returned, and I dropped 3 dress sizes without crash dieting.",
+        "beforeStats": "78 kg",
+        "afterStats": "65.2 kg",
+        "beforeImg": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+        "afterImg": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "trans-3",
+        "name": "Dr. Anirudh Mehta",
+        "profession": "Medical Resident",
+        "age": 35,
+        "duration": "90 Days",
+        "weightLoss": "-18.2 kg",
+        "tag": "Night Shifts",
+        "quote": "As a doctor with irregular hospital shifts, Asif's WhatsApp support and flexible meal prep made consistency effortless.",
+        "beforeStats": "96 kg",
+        "afterStats": "77.8 kg",
+        "beforeImg": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        "afterImg": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": "trans-4",
+        "name": "Rajesh & Sneha",
+        "profession": "Working Parents",
+        "age": 38,
+        "duration": "90 Days",
+        "weightLoss": "-22.5 kg Combined",
+        "tag": "Couples Transformation",
+        "quote": "We joined together as busy parents. Asif taught us how our entire family can eat wholesome, tasty meals while shedding stubborn fat.",
+        "beforeStats": "168 kg combined",
+        "afterStats": "145.5 kg combined",
+        "beforeImg": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
+        "afterImg": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "pillars": {
+    "heading": "Your Fitness. Your Plan. Your Progress.",
+    "ctaText": "Get Your Custom Plan",
+    "items": [
+      {
+        "id": 1,
+        "text": "A Personalized Meal Plan based on your preferences and lifestyle conditions.",
+        "icon": "UtensilsCrossed"
+      },
+      {
+        "id": 2,
+        "text": "Personalized home/gym workout plan designed to fit your unique goals, lifestyle, and preferences.",
+        "icon": "Dumbbell"
+      },
+      {
+        "id": 3,
+        "text": "Ask anything anytime on Whatsapp.",
+        "icon": "MessageCircle"
+      },
+      {
+        "id": 4,
+        "text": "Fulfilling, delicious and easy-to-cook meal plans that fit your routine and don’t make you starve.",
+        "icon": "Flame"
+      }
+    ]
+  },
+  "perfectForYou": {
+    "heading": "This Plan Is Perfect For You",
+    "ctaText": "Join The 90-Day Plan",
+    "items": [
+      "If you’re tired of trying every diet and workout plan but still not seeing results.",
+      "If you’re struggling to lose weight because no diet plan fits your busy schedule.",
+      "If you’re looking for a dedicated coach who can create a plan based on your lifestyle.",
+      "If you wish to enjoy your favorite food without feeling guilty.",
+      "If you are worried about your health but unsure where to start with fitness or nutrition.",
+      "If you find it easier to stay motivated with someone holding you accountable."
+    ]
+  },
+  "journey": {
+    "heading": "Your 90-Day Journey: Simple, Clear, Effective",
+    "subheading": "Here’s Exactly What Happens After You Enroll",
+    "ctaText": "Begin Your Transformation",
+    "steps": [
+      {
+        "step": 1,
+        "badge": "1",
+        "title": "MEET YOUR COACH",
+        "details": "Share goals, preferences & health history"
+      },
+      {
+        "step": 2,
+        "badge": "2",
+        "subBadge": "WITHIN 72 HOURS",
+        "title": "GET YOUR PLAN",
+        "points": [
+          "First 1:1 consultation call",
+          "Receive personalized meal plan",
+          "Get custom workout routine"
+        ]
+      },
+      {
+        "step": 3,
+        "badge": "3",
+        "subBadge": "WEEK 1-12",
+        "title": "TRANSFORM",
+        "phases": [
+          {
+            "phase": "Week 1-2: Build Foundation",
+            "desc": "Learn the basics, form habits, track progress"
+          },
+          {
+            "phase": "Week 3-6: See Results",
+            "desc": "Visible changes, adjusted plans, stay motivated"
+          },
+          {
+            "phase": "Week 7-10: Break Plateaus",
+            "desc": "Master routines, fine-tune nutrition, keep progressing"
+          },
+          {
+            "phase": "Week 11-12: Lock It In",
+            "desc": "Sustainable habits, maintenance strategies, celebrate success"
+          }
+        ]
+      }
+    ]
+  },
+  "expectedResults": {
+    "heading": "EXPECTED RESULTS AFTER 90 DAYS:",
+    "ctaText": "Start Achieving These Results",
+    "items": [
+      {
+        "id": 1,
+        "title": "Weight Loss & Muscle Gain",
+        "icon": "TrendingUp"
+      },
+      {
+        "id": 2,
+        "title": "Learned how to eat for life",
+        "icon": "Apple"
+      },
+      {
+        "id": 3,
+        "title": "Built sustainable habits",
+        "icon": "ShieldCheck"
+      }
+    ]
+  },
+  "coach": {
+    "heading": "Meet Your Coach",
+    "ctaText": "Book Consultation with Asif",
+    "picture": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=900&q=80",
+    "bio": "Asif Ali Raza an ISSA & INFS certified coach with 6 years of experience in fitness and nutrition coaching. His science-backed approach focuses on sustainable fat loss, muscle retention, and personalised nutrition to help you achieve your fitness goals without fad diets or extreme restrictions."
+  }
+}
