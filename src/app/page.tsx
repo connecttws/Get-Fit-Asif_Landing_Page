@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { Transformations } from '../components/Transformations';
+import { VideoTestimonials } from '../components/VideoTestimonials';
 import { PillarsSection } from '../components/PillarsSection';
 import { PerfectForYou } from '../components/PerfectForYou';
 import { JourneyTimeline } from '../components/JourneyTimeline';
@@ -12,6 +13,7 @@ import { CoachProfile } from '../components/CoachProfile';
 import { Footer } from '../components/Footer';
 import { EnrollmentModal } from '../components/EnrollmentModal';
 import { FloatingWhatsApp } from '../components/FloatingWhatsApp';
+import { ScrollOverscrollHandler } from '../components/ScrollOverscrollHandler';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +37,9 @@ export default function Home() {
         {/* 2. Real People, Real Results - Success Stories That Motivate & CTA Button */}
         <Transformations onOpenConsultation={() => handleOpenConsultation('fat_loss')} />
 
+        {/* 2b. Video Testimonials Slider with Phone Frames & Click-to-Play */}
+        <VideoTestimonials onOpenConsultation={() => handleOpenConsultation('fat_loss')} />
+
         {/* 3. Your Fitness. Your Plan. Your Progress. (4 Points) & CTA Button */}
         <PillarsSection onOpenConsultation={() => handleOpenConsultation('fat_loss')} />
 
@@ -56,6 +61,9 @@ export default function Home() {
 
       {/* Floating WhatsApp Quick Connect */}
       <FloatingWhatsApp />
+
+      {/* Eliminates Bottom & Horizontal Elastic Rubber-Banding while Keeping Top Pull-To-Refresh */}
+      <ScrollOverscrollHandler />
 
       {/* Consultation Assessment Modal */}
       <EnrollmentModal

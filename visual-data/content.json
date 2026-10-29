@@ -7,183 +7,282 @@
   },
   "hero": {
     "brandTitle": "GET FIT WITH ASIF",
-    "certification": "ISSA & INFS Certified Coach",
+    "superHeadline": "12-Week Online Fitness & Nutrition Coaching",
     "tagline": "Lose Fat | Build Muscle | Become Your Best Self.",
-    "ctaText": "Start Your Transformation Now"
+    "supportingText": "Personalised nutrition, practical training and ongoing coaching for busy working professionals who want sustainable fat loss without fad diets or unnecessary food restrictions.",
+    "certification": "ISSA & INFS Certified Coach",
+    "ctaText": "Book a Consultation",
+    "ctaNote": "Discuss your goals, understand how coaching works, and see whether the programme is right for you."
   },
   "transformations": {
-    "heading": "Real People, Real Results - Success Stories That Motivate",
-    "ctaText": "Start Your 90-Day Transformation",
+    "heading": "Real People, Real Results. Success Stories That Motivate",
+    "ctaText": "Book a Consultation",
+    "featuredStory": {
+      "id": "trans-mukesh",
+      "name": "Mukesh",
+      "profession": "Police Officer",
+      "duration": "Shift Duty Routine",
+      "weightLoss": "+20 kg Muscle Gain",
+      "beforeStats": "55 kg (lean frame, low definition)",
+      "afterStats": "75 kg (strong, muscular physique)",
+      "quote": "Stayed consistent despite unpredictable shift hours and duty demands with a personalized plan.",
+      "image": "/Testimonial-images/1.jpg.jpeg"
+    },
     "stories": [
       {
-        "id": "trans-1",
-        "name": "Vikram Singhania",
-        "profession": "Software Engineer",
-        "age": 32,
-        "duration": "90 Days",
-        "weightLoss": "-15.4 kg",
-        "tag": "Desk Job",
-        "quote": "With 12-hour desk shifts, I thought fat loss was impossible. Asif built my meal plan around ghar ka khana and 40-min home workouts. Lost 15kg without giving up evening chai!",
-        "beforeStats": "92 kg",
-        "afterStats": "76.6 kg",
-        "beforeImg": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80",
-        "afterImg": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+        "id": "trans-saloni",
+        "name": "Saloni",
+        "profession": "Full-Time Working Professional",
+        "duration": "Sustainable Routine",
+        "weightLoss": "-24 kg",
+        "tag": "Working Professional",
+        "quote": "She did not follow a strict diet, just small daily habits that fit her busy schedule.",
+        "beforeStats": "94 kg (felt low on energy and inconsistent)",
+        "afterStats": "70 kg (confident, energetic, and consistent)",
+        "image": "/Testimonial-images/2.jpg.jpeg"
       },
       {
-        "id": "trans-2",
-        "name": "Pooja Hegde",
-        "profession": "Corporate HR Manager",
-        "age": 29,
-        "duration": "90 Days",
-        "weightLoss": "-12.8 kg",
-        "tag": "PCOS & Fat Loss",
-        "quote": "Coach Asif altered my carb timing and resistance training. My cycles became regular, my energy returned, and I dropped 3 dress sizes without crash dieting.",
-        "beforeStats": "78 kg",
-        "afterStats": "65.2 kg",
-        "beforeImg": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
-        "afterImg": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80"
+        "id": "trans-tahmina",
+        "name": "Tahmina",
+        "profession": "Busy Lifestyle & Family",
+        "duration": "Consistent Habits",
+        "weightLoss": "-42 kg",
+        "tag": "Stress & Habit Management",
+        "quote": "Focused on building discipline, improving eating habits, and managing stress.",
+        "beforeStats": "115 kg (tired, emotional eating)",
+        "afterStats": "73 kg (calm, consistent)",
+        "image": "/Testimonial-images/3.jpg.jpeg"
       },
       {
-        "id": "trans-3",
-        "name": "Dr. Anirudh Mehta",
-        "profession": "Medical Resident",
-        "age": 35,
-        "duration": "90 Days",
-        "weightLoss": "-18.2 kg",
-        "tag": "Night Shifts",
-        "quote": "As a doctor with irregular hospital shifts, Asif's WhatsApp support and flexible meal prep made consistency effortless.",
-        "beforeStats": "96 kg",
-        "afterStats": "77.8 kg",
-        "beforeImg": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-        "afterImg": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80"
+        "id": "trans-apoorva",
+        "name": "Apoorva",
+        "profession": "Corporate 9-5 Professional",
+        "duration": "12 Months",
+        "weightLoss": "-25 kg (78 to 53 kg)",
+        "tag": "9-5 Routine",
+        "quote": "Built a simple, sustainable routine that worked even with her demanding 9-5 job.",
+        "beforeStats": "78 kg (unmotivated and irregular)",
+        "afterStats": "53 kg (disciplined, active)",
+        "image": "/Testimonial-images/4.jpg.jpeg"
       },
       {
-        "id": "trans-4",
-        "name": "Rajesh & Sneha",
-        "profession": "Working Parents",
-        "age": 38,
-        "duration": "90 Days",
-        "weightLoss": "-22.5 kg Combined",
-        "tag": "Couples Transformation",
-        "quote": "We joined together as busy parents. Asif taught us how our entire family can eat wholesome, tasty meals while shedding stubborn fat.",
-        "beforeStats": "168 kg combined",
-        "afterStats": "145.5 kg combined",
-        "beforeImg": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
-        "afterImg": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
+        "id": "trans-farida",
+        "name": "Farida",
+        "profession": "Working Professional",
+        "duration": "2 Years",
+        "weightLoss": "-28 kg",
+        "tag": "Long-Term Consistency",
+        "quote": "Focused on strength, structure, and self-discipline to prove long-term fat loss is achievable.",
+        "beforeStats": "90 kg (struggled with motivation)",
+        "afterStats": "62 kg (regained confidence)",
+        "image": "/Testimonial-images/5.jpg.jpeg"
+      },
+      {
+        "id": "trans-kabeer",
+        "name": "Kabeer Bhat",
+        "profession": "Student & Football Player",
+        "duration": "Athletic Training",
+        "weightLoss": "+25 kg Lean Mass",
+        "tag": "Athletic Performance",
+        "quote": "Stayed disciplined alongside studies, football training, and daily commitments.",
+        "beforeStats": "55 kg (underweight, low strength)",
+        "afterStats": "80 kg (muscular build, high stamina)",
+        "image": "/Testimonial-images/6.jpg.jpeg"
+      },
+      {
+        "id": "trans-krishnam",
+        "name": "Krishnam Saha",
+        "profession": "Business Owner",
+        "duration": "Frequent Travel Routine",
+        "weightLoss": "-34 kg",
+        "tag": "Frequent Travel",
+        "quote": "Stayed focused through long work hours, client meetings, and unpredictable travel schedules.",
+        "beforeStats": "122 kg (high weight, frequent fatigue)",
+        "afterStats": "88 kg (lighter, fitter, energetic)",
+        "image": "/Testimonial-images/7.jpg.jpeg"
+      }
+    ]
+  },
+  "videoTestimonials": {
+    "heading": "Watch Their Real Transformation Stories",
+    "subheading": "Real clients sharing their genuine coaching experiences, lifestyle shifts, and sustainable progress.",
+    "ctaText": "Book a Consultation",
+    "ctaNote": "Discuss your goals, understand how coaching works, and see whether the programme is right for you.",
+    "videos": [
+      {
+        "id": "vid-krishnam",
+        "name": "Krishnam Saha",
+        "profession": "Business Owner",
+        "result": "122 kg to 88 kg (-34 kg)",
+        "highlight": "Small daily habits and consistency through a busy travel schedule.",
+        "instagramUrl": "https://www.instagram.com/reel/DSH5YjgE-Ii/",
+        "embedUrl": "https://www.instagram.com/reel/DSH5YjgE-Ii/embed/",
+        "posterImage": "/Testimonial-images/7.jpg.jpeg"
+      },
+      {
+        "id": "vid-mukesh",
+        "name": "Mr. Mukesh",
+        "profession": "Police Officer",
+        "result": "55 kg to 75 kg (+20 kg Lean Mass)",
+        "highlight": "Stayed consistent despite unpredictable shift hours and duty demands.",
+        "instagramUrl": "https://www.instagram.com/p/C8rqR1zyJhg/",
+        "embedUrl": "https://www.instagram.com/p/C8rqR1zyJhg/embed/",
+        "posterImage": "/Testimonial-images/1.jpg.jpeg"
+      },
+      {
+        "id": "vid-farida",
+        "name": "Farida Azizi",
+        "profession": "Working Professional",
+        "result": "90 kg to 62 kg (-28 kg)",
+        "highlight": "Focus on strength, structure, and lasting self-discipline.",
+        "instagramUrl": "https://www.instagram.com/p/C-Sc8zNyQIN/",
+        "embedUrl": "https://www.instagram.com/p/C-Sc8zNyQIN/embed/",
+        "posterImage": "/Testimonial-images/5.jpg.jpeg"
+      },
+      {
+        "id": "vid-apoorva",
+        "name": "Apoorva Arya",
+        "profession": "Corporate Professional",
+        "result": "78 kg to 53 kg (-25 kg)",
+        "highlight": "From XXL to XS with a simple routine that fit a demanding 9 to 5 job.",
+        "instagramUrl": "https://www.instagram.com/reel/DGs1BEdyJpT/",
+        "embedUrl": "https://www.instagram.com/reel/DGs1BEdyJpT/embed/",
+        "posterImage": "/Testimonial-images/4.jpg.jpeg"
+      },
+      {
+        "id": "vid-tahmina",
+        "name": "Ms. Tahmina",
+        "profession": "Busy Lifestyle & Family",
+        "result": "115 kg to 73 kg (-42 kg)",
+        "highlight": "Building discipline, improving eating habits, and managing stress.",
+        "instagramUrl": "https://www.instagram.com/p/C9w-81MSOUl/",
+        "embedUrl": "https://www.instagram.com/p/C9w-81MSOUl/embed/",
+        "posterImage": "/Testimonial-images/3.jpg.jpeg"
+      },
+      {
+        "id": "vid-saloni",
+        "name": "Saloni Singh",
+        "profession": "Full-Time Working Professional",
+        "result": "94 kg to 70 kg (-24 kg)",
+        "highlight": "From low energy and self-doubt to 24 kg lost with realistic habits.",
+        "instagramUrl": "https://www.instagram.com/p/DCoyaJ7Ipj0/",
+        "embedUrl": "https://www.instagram.com/p/DCoyaJ7Ipj0/embed/",
+        "posterImage": "/Testimonial-images/2.jpg.jpeg"
       }
     ]
   },
   "pillars": {
     "heading": "Your Fitness. Your Plan. Your Progress.",
-    "ctaText": "Get Your Custom Plan",
+    "intro": "More than a plan to follow. You get coaching to help you put it into practice.",
+    "ctaText": "Book a Consultation",
     "items": [
       {
         "id": 1,
-        "text": "A Personalized Meal Plan based on your preferences and lifestyle conditions.",
+        "title": "Nutrition that fits your life",
+        "description": "A personalised nutrition plan built around your food preferences, routine and goals, with practical guidance on portions and everyday meals.",
         "icon": "UtensilsCrossed"
       },
       {
         "id": 2,
-        "text": "Personalized home/gym workout plan designed to fit your unique goals, lifestyle, and preferences.",
+        "title": "Training that fits your schedule",
+        "description": "A personalised home or gym workout plan matched to your experience, available equipment and time.",
         "icon": "Dumbbell"
       },
       {
         "id": 3,
-        "text": "Ask anything anytime on Whatsapp.",
-        "icon": "MessageCircle"
+        "title": "Coaching calls, reviews and adjustments",
+        "description": "Regular coaching calls and progress reviews to discuss challenges, assess how your plan is working and make adjustments when needed.",
+        "icon": "PhoneCall"
       },
       {
         "id": 4,
-        "text": "Fulfilling, delicious and easy-to-cook meal plans that fit your routine and don’t make you starve.",
-        "icon": "Flame"
+        "title": "WhatsApp support between reviews",
+        "description": "Ask questions and get practical guidance when work, travel, social meals or difficult weeks make consistency harder.",
+        "icon": "MessageCircle"
+      },
+      {
+        "id": 5,
+        "title": "Workout form and technique guidance",
+        "description": "Appropriate exercise video references and feedback to help you understand movements and improve your technique.",
+        "icon": "ShieldCheck"
       }
     ]
   },
   "perfectForYou": {
-    "heading": "This Plan Is Perfect For You",
-    "ctaText": "Join The 90-Day Plan",
+    "heading": "This Programme Is for You If...",
+    "ctaText": "Book a Consultation",
     "items": [
-      "If you’re tired of trying every diet and workout plan but still not seeing results.",
-      "If you’re struggling to lose weight because no diet plan fits your busy schedule.",
-      "If you’re looking for a dedicated coach who can create a plan based on your lifestyle.",
-      "If you wish to enjoy your favorite food without feeling guilty.",
-      "If you are worried about your health but unsure where to start with fitness or nutrition.",
-      "If you find it easier to stay motivated with someone holding you accountable."
+      "You struggle to stay consistent around a busy work schedule.",
+      "You have tried plans before but need help putting them into practice.",
+      "You want nutrition guidance that respects your food preferences and routine.",
+      "You want someone to review your progress, not simply send you a plan.",
+      "You are willing to practise manageable changes rather than look for a crash diet."
     ]
   },
   "journey": {
-    "heading": "Your 90-Day Journey: Simple, Clear, Effective",
-    "subheading": "Here’s Exactly What Happens After You Enroll",
-    "ctaText": "Begin Your Transformation",
+    "heading": "Your 12-Week Coaching Journey",
+    "subheading": "Here's what happens after you enrol.",
+    "ctaText": "Book a Consultation",
     "steps": [
       {
         "step": 1,
-        "badge": "1",
-        "title": "MEET YOUR COACH",
-        "details": "Share goals, preferences & health history"
+        "title": "Complete your assessment",
+        "description": "Fill in your fitness questionnaire and share your goals, food preferences, work schedule, training experience and relevant health history."
       },
       {
         "step": 2,
-        "badge": "2",
-        "subBadge": "WITHIN 72 HOURS",
-        "title": "GET YOUR PLAN",
-        "points": [
-          "First 1:1 consultation call",
-          "Receive personalized meal plan",
-          "Get custom workout routine"
-        ]
+        "timingLabel": "Within 48 hours of receiving your completed questionnaire",
+        "title": "Receive your personalised plans",
+        "description": "Receive your personalised nutrition and workout plans, along with guidance on how to get started."
       },
       {
         "step": 3,
-        "badge": "3",
-        "subBadge": "WEEK 1-12",
-        "title": "TRANSFORM",
-        "phases": [
-          {
-            "phase": "Week 1-2: Build Foundation",
-            "desc": "Learn the basics, form habits, track progress"
-          },
-          {
-            "phase": "Week 3-6: See Results",
-            "desc": "Visible changes, adjusted plans, stay motivated"
-          },
-          {
-            "phase": "Week 7-10: Break Plateaus",
-            "desc": "Master routines, fine-tune nutrition, keep progressing"
-          },
-          {
-            "phase": "Week 11-12: Lock It In",
-            "desc": "Sustainable habits, maintenance strategies, celebrate success"
-          }
+        "timingLabel": "Throughout your 12 weeks",
+        "title": "Follow, review and adjust",
+        "description": "Put your plans into practice with regular coaching calls, progress reviews, WhatsApp support and adjustments when needed.",
+        "supportingPoints": [
+          "Build a manageable nutrition and training routine.",
+          "Review progress and work through practical obstacles.",
+          "Practise habits you can continue beyond coaching."
         ]
       }
     ]
   },
   "expectedResults": {
-    "heading": "EXPECTED RESULTS AFTER 90 DAYS:",
-    "ctaText": "Start Achieving These Results",
+    "heading": "What We'll Work Towards Over 12 Weeks",
+    "ctaText": "Book a Consultation",
     "items": [
       {
         "id": 1,
-        "title": "Weight Loss & Muscle Gain",
+        "title": "Sustainable fat loss and improved strength",
+        "description": "Follow nutrition and training tailored to your starting point, goals and ability to stay consistent.",
         "icon": "TrendingUp"
       },
       {
         "id": 2,
-        "title": "Learned how to eat for life",
+        "title": "More confidence with everyday food choices",
+        "description": "Learn practical ways to manage portions, structure meals and include foods you enjoy.",
         "icon": "Apple"
       },
       {
         "id": 3,
-        "title": "Built sustainable habits",
+        "title": "A more consistent routine",
+        "description": "Build nutrition and workout habits that fit your work, family and social life.",
         "icon": "ShieldCheck"
       }
-    ]
+    ],
+    "disclaimer": "Results vary depending on your starting point, consistency, training history, sleep, stress and health status. No specific amount of weight loss or physical transformation is guaranteed."
   },
   "coach": {
     "heading": "Meet Your Coach",
-    "ctaText": "Book Consultation with Asif",
-    "picture": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=900&q=80",
-    "bio": "Asif Ali Raza an ISSA & INFS certified coach with 6 years of experience in fitness and nutrition coaching. His science-backed approach focuses on sustainable fat loss, muscle retention, and personalised nutrition to help you achieve your fitness goals without fad diets or extreme restrictions."
+    "ctaText": "Book a Consultation",
+    "secondaryCtaText": "Have a Question? WhatsApp Asif",
+    "picture": "/images/690b47eed6c0c_Untitleddesign41.png",
+    "bioParagraphs": [
+      "I'm Asif Ali Raza, an ISSA Certified Personal Trainer and Certified Nutritionist Coach, and an INFS Certified Nutrition and Fitness Consultant.",
+      "I previously worked as a fitness consultant at HealthifyMe.",
+      "I help busy working professionals work towards sustainable fat loss through personalised nutrition, practical training and ongoing support.",
+      "My approach is evidence-based and practical. I understand your routine, build a plan you can follow, review your progress and adjust when needed, without fad diets or extreme restrictions."
+    ]
   }
 }

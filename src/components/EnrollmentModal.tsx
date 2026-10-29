@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { X, CheckCircle2, ArrowRight, ArrowLeft, ShieldCheck, MessageCircle, Sparkles, Phone, User, Mail } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { ConsultationFormData } from '../types';
+import { BRAND_DATA } from '../data/coachingData';
 
 interface EnrollmentModalProps {
   isOpen: boolean;
@@ -25,7 +26,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
     fullName: '',
     whatsappNumber: '',
     email: '',
-    primaryGoal: initialGoal === 'muscle_gain' ? 'Build Muscle' : 'Lose Fat & Tone',
+    primaryGoal: initialGoal === 'muscle_gain' ? 'Build Muscle' : 'Sustainable Fat Loss',
     dietPreference: 'Vegetarian',
     workoutPreference: 'Home Workout (Minimal Equipment)',
     currentWeight: initialWeight || '',
@@ -59,24 +60,30 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hi Coach Asif! I want to enroll in the 90-Day Transformation Plan.\n\nName: ${formData.fullName}\nGoal: ${formData.primaryGoal}\nDiet: ${formData.dietPreference}\nWorkout: ${formData.workoutPreference}\nCurrent Weight: ${formData.currentWeight || 'N/A'}\nTarget Weight: ${formData.targetWeight || 'N/A'}`
+    `Hi Coach Asif! I would like to book a consultation for the 12-Week Coaching Programme.\n\nName: ${formData.fullName}\nGoal: ${formData.primaryGoal}\nDiet: ${formData.dietPreference}\nWorkout: ${formData.workoutPreference}\nCurrent Weight: ${formData.currentWeight || 'N/A'}\nTarget Weight: ${formData.targetWeight || 'N/A'}`
   );
 
+  const resetAndClose = () => {
+    setIsSubmitted(false);
+    setStep(1);
+    onClose();
+  };
+
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="relative w-full max-w-xl bg-white rounded-3xl shadow-2xl border border-emerald-200 overflow-hidden my-8">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
+      <div className="relative w-full max-w-xl bg-white rounded-3xl shadow-2xl border border-emerald-200 overflow-hidden my-6">
         {/* Header */}
         <div className="bg-gradient-to-r from-[#00BD68] to-[#00924e] text-white p-5 sm:p-6 flex items-center justify-between">
           <div>
-            <span className="text-[11px] font-semibold text-emerald-100 bg-white/20 px-2 py-0.5 rounded">
-              Get Fit With Asif • 90-Day Plan
+            <span className="text-[11px] font-bold text-emerald-100 bg-white/20 px-2.5 py-0.5 rounded-full">
+              Get Fit With Asif • 12-Week Coaching
             </span>
-            <h3 className="text-xl sm:text-2xl font-bold mt-1">
-              Personalized Plan Assessment
+            <h3 className="text-xl sm:text-2xl font-black mt-1 tracking-tight">
+              Book a Consultation
             </h3>
           </div>
           <button
-            onClick={onClose}
+            onClick={resetAndClose}
             aria-label="Close modal"
             className="w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors cursor-pointer"
           >
@@ -85,11 +92,11 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 sm:p-8">
+        <div className="p-5 sm:p-8">
           {!isSubmitted ? (
             <div>
               {/* Stepper Progress */}
-              <div className="flex items-center justify-between mb-8 pb-4 border-b border-slate-100">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
                 {[
                   { num: 1, label: 'Your Goals' },
                   { num: 2, label: 'Preferences' },
@@ -116,8 +123,8 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                 ))}
               </div>
 
-              <form id="enrollment-form" onSubmit={handleSubmit}>
-                {/* Hidden inputs to preserve earlier step data for CRM lead tracker forms */}
+              <form id="consultation-form" onSubmit={handleSubmit}>
+                {/* Hidden inputs to preserve earlier step data for CRM lead tracker */}
                 <input type="hidden" name="primaryGoal" value={formData.primaryGoal} />
                 <input type="hidden" name="dietPreference" value={formData.dietPreference} />
                 <input type="hidden" name="workoutPreference" value={formData.workoutPreference} />
@@ -128,15 +135,15 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                 {step === 1 && (
                   <div className="space-y-4">
                     <div>
-                      <label className="text-xs font-semibold text-slate-700 block mb-2">
+                      <label className="text-xs font-bold text-slate-700 block mb-2">
                         What is your primary fitness goal?
                       </label>
                       <div className="grid grid-cols-2 gap-2.5">
                         {[
-                          'Lose Fat & Tone',
+                          'Sustainable Fat Loss',
                           'Build Muscle',
-                          'Reclaim Energy & Fix Diet',
-                          'Manage PCOS / Thyroid',
+                          'Routine Consistency & Energy',
+                          'Health & Habit Building',
                         ].map((g) => (
                           <button
                             type="button"
@@ -156,7 +163,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
 
                     <div className="grid grid-cols-2 gap-3 pt-2">
                       <div>
-                        <label className="text-xs font-semibold text-slate-700 block mb-1">
+                        <label className="text-xs font-bold text-slate-700 block mb-1">
                           Current Weight (kg)
                         </label>
                         <input
@@ -169,7 +176,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                         />
                       </div>
                       <div>
-                        <label className="text-xs font-semibold text-slate-700 block mb-1">
+                        <label className="text-xs font-bold text-slate-700 block mb-1">
                           Target Weight (kg)
                         </label>
                         <input
@@ -189,8 +196,8 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                 {step === 2 && (
                   <div className="space-y-4">
                     <div>
-                      <label className="text-xs font-semibold text-slate-700 block mb-2">
-                        Your Food & Dietary Preference:
+                      <label className="text-xs font-bold text-slate-700 block mb-2">
+                        Your Food and Dietary Preference:
                       </label>
                       <div className="grid grid-cols-3 gap-2">
                         {['Vegetarian', 'Eggetarian', 'Non-Vegetarian', 'Vegan', 'Jain Diet'].map((d) => (
@@ -211,15 +218,15 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     </div>
 
                     <div className="pt-2">
-                      <label className="text-xs font-semibold text-slate-700 block mb-2">
+                      <label className="text-xs font-bold text-slate-700 block mb-2">
                         Workout Setting Preference:
                       </label>
                       <div className="grid grid-cols-2 gap-2.5">
                         {[
                           'Home Workout (Minimal Equipment)',
-                          'Gym Workout (Full Weights)',
-                          'Travel / Hybrid Schedule',
-                          'Beginner Mobility & Walks',
+                          'Gym Workout (Full Equipment)',
+                          'Travel and Flexible Routine',
+                          'Beginner Movement and Walks',
                         ].map((w) => (
                           <button
                             type="button"
@@ -243,7 +250,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                 {step === 3 && (
                   <div className="space-y-4">
                     <div>
-                      <label className="text-xs font-semibold text-slate-700 block mb-1">
+                      <label className="text-xs font-bold text-slate-700 block mb-1">
                         Your Full Name *
                       </label>
                       <div className="relative">
@@ -261,8 +268,8 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     </div>
 
                     <div>
-                      <label className="text-xs font-semibold text-slate-700 block mb-1">
-                        WhatsApp Number * (For Direct 1:1 Access)
+                      <label className="text-xs font-bold text-slate-700 block mb-1">
+                        WhatsApp Number * (For Consultation Call and Plan Review)
                       </label>
                       <div className="relative">
                         <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
@@ -279,7 +286,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                     </div>
 
                     <div>
-                      <label className="text-xs font-semibold text-slate-700 block mb-1">
+                      <label className="text-xs font-bold text-slate-700 block mb-1">
                         Email Address
                       </label>
                       <div className="relative">
@@ -287,7 +294,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                         <input
                           type="email"
                           name="email"
-                          placeholder="e.g. rahul@gmail.com"
+                          placeholder="e.g. rahul@example.com"
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           className="w-full bg-slate-50 border border-slate-300 rounded-xl pl-10 pr-3 py-2.5 text-sm font-medium focus:outline-emerald-500"
@@ -314,7 +321,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                       <span>Back</span>
                     </button>
                   ) : (
-                    <div></div>
+                    <div />
                   )}
 
                   {step < 3 ? (
@@ -329,9 +336,9 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
                   ) : (
                     <button
                       type="submit"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00BD68] to-[#00924e] hover:from-[#00c874] hover:to-[#00a85d] text-white font-bold text-sm px-7 py-3 rounded-xl shadow-md shadow-emerald-500/30 cursor-pointer transition-all"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00BD68] to-[#00924e] hover:from-[#00c874] hover:to-[#00a85d] text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md shadow-emerald-500/30 cursor-pointer transition-all"
                     >
-                      <span>Confirm & Connect With Coach</span>
+                      <span>Confirm & Book Consultation</span>
                       <Sparkles className="w-4 h-4" />
                     </button>
                   )}
@@ -339,45 +346,45 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({
               </form>
             </div>
           ) : (
-            /* Submission Success View */
-            <div className="text-center py-6">
-              <div className="w-16 h-16 rounded-full bg-emerald-100 text-[#00BD68] flex items-center justify-center mx-auto mb-4">
+            /* Submission Success View - Booking Confirmation Received */
+            <div className="text-center py-4 sm:py-6">
+              <div className="w-16 h-16 rounded-full bg-emerald-100 text-[#00BD68] flex items-center justify-center mx-auto mb-4 shadow-xs">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
 
-              <h4 className="text-2xl font-bold text-slate-900 mb-2">
-                You're One Step Away, {formData.fullName || 'Champion'}!
+              <h4 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                Consultation Request Received, {formData.fullName || 'Champion'}!
               </h4>
-              <p className="text-sm text-slate-600 max-w-md mx-auto mb-6">
-                Your profile has been received. Coach Asif has reviewed your goal ({formData.primaryGoal}) and is ready to get started.
+              <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto mb-6 leading-relaxed">
+                Your fitness questionnaire has been received. Coach Asif has your goal ({formData.primaryGoal}) on file and is ready to assess whether the 12-week programme is the right fit for your schedule.
               </p>
 
               {/* Direct WhatsApp Launch Button */}
               <div className="p-4 bg-emerald-50 rounded-2xl border border-emerald-200 mb-6 text-left">
-                <div className="text-xs font-semibold text-emerald-900 mb-1">
-                  Instant Connection:
+                <div className="text-xs font-bold text-emerald-950 mb-1">
+                  Connect Directly with Coach Asif:
                 </div>
                 <p className="text-xs text-slate-600 mb-3">
-                  Click below to immediately initiate your WhatsApp consultation with Coach Asif with your assessment pre-filled:
+                  Click below to open WhatsApp with your assessment pre-filled:
                 </p>
 
                 <a
-                  href={`https://wa.me/919876543210?text=${whatsappMessage}`}
+                  href={`https://wa.me/${BRAND_DATA.whatsappPhone}?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-[#00BD68] hover:bg-[#00a85d] text-white font-bold text-sm py-3.5 px-4 rounded-xl shadow-md cursor-pointer transition-all"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#00BD68] hover:bg-[#00a85d] text-white font-bold text-xs sm:text-sm py-3.5 px-4 rounded-xl shadow-md cursor-pointer transition-all"
                 >
-                  <MessageCircle className="w-5 h-5" />
-                  <span>Open Direct WhatsApp Chat with Coach Asif</span>
+                  <MessageCircle className="w-5 h-5 text-white" />
+                  <span>Open WhatsApp Consultation Chat</span>
                 </a>
               </div>
 
               <button
                 type="button"
-                onClick={onClose}
-                className="text-xs font-semibold text-slate-500 hover:text-slate-800 cursor-pointer"
+                onClick={resetAndClose}
+                className="text-xs font-semibold text-slate-500 hover:text-slate-800 cursor-pointer underline"
               >
-                Close & Return to Page
+                Close and Return to Page
               </button>
             </div>
           )}
