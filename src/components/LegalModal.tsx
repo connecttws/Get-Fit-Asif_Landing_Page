@@ -60,7 +60,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ isOpen, onClose, type })
               </p>
               <h4 className="font-bold text-slate-900 text-sm sm:text-base">5. Contacting Us</h4>
               <p>
-                For questions regarding this privacy policy, you may reach out directly to Coach Asif Ali Raza via WhatsApp at +91 98765 43210.
+                For questions regarding this privacy policy, you may reach out directly to Coach Asif Ali Raza via WhatsApp at +91 70428 59955.
               </p>
             </>
           ) : (
