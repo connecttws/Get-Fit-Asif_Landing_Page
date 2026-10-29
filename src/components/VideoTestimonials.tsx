@@ -80,53 +80,53 @@ export const VideoTestimonials: React.FC<VideoTestimonialsProps> = ({ onOpenCons
           </p>
         </div>
 
-        {/* Carousel Navigation Bar (Header) */}
-        <div className="flex items-center justify-between max-w-6xl mx-auto mb-6 px-2">
-          <div className="flex items-center gap-2">
-            <span className="text-xs sm:text-sm font-semibold text-slate-300">
-              Story <span className="text-emerald-400 font-bold">{currentIndex + 1}</span> of {videos.length}
-            </span>
-            <span className="text-slate-600">|</span>
-            <span className="text-xs text-slate-400 hidden sm:inline">
-              Click play on any reel to watch directly
-            </span>
-          </div>
-
-          {/* Left / Right Arrow Buttons */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={handlePrev}
-              disabled={currentIndex === 0}
-              aria-label="Previous video story"
-              className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all cursor-pointer ${
-                currentIndex === 0
-                  ? 'border-slate-800 text-slate-600 cursor-not-allowed opacity-40'
-                  : 'border-slate-700 bg-slate-800/80 hover:bg-emerald-600 hover:border-emerald-500 text-white shadow-md'
-              }`}
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={handleNext}
-              disabled={currentIndex === videos.length - 1}
-              aria-label="Next video story"
-              className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all cursor-pointer ${
-                currentIndex === videos.length - 1
-                  ? 'border-slate-800 text-slate-600 cursor-not-allowed opacity-40'
-                  : 'border-slate-700 bg-slate-800/80 hover:bg-emerald-600 hover:border-emerald-500 text-white shadow-md'
-              }`}
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+        {/* Carousel Navigation Subtitle / Counter */}
+        <div className="flex items-center justify-center gap-2 max-w-6xl mx-auto mb-6 px-2 text-center">
+          <span className="text-xs sm:text-sm font-semibold text-slate-300">
+            Story <span className="text-emerald-400 font-bold">{currentIndex + 1}</span> of {videos.length}
+          </span>
+          <span className="text-slate-600">|</span>
+          <span className="text-xs text-slate-400">
+            Click play on any reel to watch directly
+          </span>
         </div>
 
-        {/* Slider Track - Direct 1-Click Play Frames */}
-        <div
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 pt-2 no-scrollbar px-2 sm:px-4"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
+        {/* Carousel Container with Side Arrows (Desktop Only) */}
+        <div className="relative max-w-6xl mx-auto">
+          {/* Desktop-Only Left Arrow Button (On the side) */}
+          <button
+            onClick={handlePrev}
+            disabled={currentIndex === 0}
+            aria-label="Previous video story"
+            className={`hidden lg:flex absolute -left-5 xl:-left-7 top-[280px] -translate-y-1/2 z-30 w-12 h-12 rounded-full items-center justify-center border transition-all cursor-pointer shadow-2xl backdrop-blur-md ${
+              currentIndex === 0
+                ? 'border-slate-800/60 bg-slate-900/60 text-slate-600 cursor-not-allowed opacity-25'
+                : 'border-slate-700 bg-slate-800/95 hover:bg-emerald-600 hover:border-emerald-500 text-white hover:scale-110'
+            }`}
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+
+          {/* Desktop-Only Right Arrow Button (On the side) */}
+          <button
+            onClick={handleNext}
+            disabled={currentIndex === videos.length - 1}
+            aria-label="Next video story"
+            className={`hidden lg:flex absolute -right-5 xl:-right-7 top-[280px] -translate-y-1/2 z-30 w-12 h-12 rounded-full items-center justify-center border transition-all cursor-pointer shadow-2xl backdrop-blur-md ${
+              currentIndex === videos.length - 1
+                ? 'border-slate-800/60 bg-slate-900/60 text-slate-600 cursor-not-allowed opacity-25'
+                : 'border-slate-700 bg-slate-800/95 hover:bg-emerald-600 hover:border-emerald-500 text-white hover:scale-110'
+            }`}
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+
+          {/* Slider Track - Direct 1-Click Play Frames */}
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-6 pt-2 no-scrollbar px-2 sm:px-4"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
           {videos.map((item) => (
             <div
               key={item.id}
@@ -186,6 +186,7 @@ export const VideoTestimonials: React.FC<VideoTestimonialsProps> = ({ onOpenCons
               </div>
             </div>
           ))}
+          </div>
         </div>
 
         {/* Carousel Pagination Dots */}
