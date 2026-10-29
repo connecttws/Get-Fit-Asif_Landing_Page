@@ -38,12 +38,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
         </h1>
 
         {/* Supporting text below the headline */}
-        <p className="max-w-2xl mx-auto text-sm sm:text-base lg:text-lg text-slate-700 leading-relaxed font-normal mb-6 sm:mb-7">
+        <p className="max-w-2xl mx-auto text-sm sm:text-base lg:text-lg text-slate-700 leading-relaxed font-normal mb-6 sm:mb-8">
           {HERO_DATA.supportingText}
         </p>
 
-        {/* Primary CTA Button placed BEFORE the video so visitors can book without watching */}
-        <div className="flex flex-col items-center justify-center gap-2.5 mb-8 sm:mb-10">
+        {/* VSL Video Container - Moved up directly below the headline and supporting copy */}
+        <div className="max-w-3xl mx-auto mb-8 sm:mb-10">
+          <VslPlayer onOpenConsultation={onOpenConsultation} />
+        </div>
+
+        {/* Primary CTA Button & Supporting Note - Placed downside below the VSL video */}
+        <div className="flex flex-col items-center justify-center gap-2.5">
           <button
             onClick={onOpenConsultation}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#00BD68] to-[#009e56] hover:from-[#00c874] hover:to-[#00a85d] text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-3.5 sm:py-4 rounded-2xl shadow-lg shadow-emerald-600/30 hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer group"
@@ -55,11 +60,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
           <p className="text-xs sm:text-sm text-slate-600 max-w-md font-medium text-center px-2">
             {HERO_DATA.ctaNote}
           </p>
-        </div>
-
-        {/* VSL Video Container */}
-        <div className="max-w-3xl mx-auto">
-          <VslPlayer onOpenConsultation={onOpenConsultation} />
         </div>
       </div>
     </section>
